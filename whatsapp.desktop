@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=WhatsApp
+Type=Application
+X-GNOME-Autostart-enabled=true
+Comment=WhatsApp
+Exec=/opt/whatsapp/start-whatsapp
+Icon=/opt/whatsapp/whatsapp.png
+StartupWMClass=WhatsApp
+

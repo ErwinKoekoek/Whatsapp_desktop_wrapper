@@ -1,0 +1,34 @@
+#!/bin/bash
+name="WhatsApp"
+url="https://web.whatsapp.com"
+
+#needs
+# sudo apt-get install wmctrl
+# sudo apt-get install chromium-browser
+
+
+function whatsapp_running() {
+ psname="[w]eb.whatsapp.com"
+ count=`ps -ef|grep ${psname}|wc -l`
+ echo $count
+}
+
+
+function start_whatsapp() {
+ #exec -a "${name}" /usr/bin/chromium-browser --app=https://web.whatsapp.com &
+ /usr/bin/chromium-browser --app=${url} --class="WhatsApp" &
+}
+
+function focus_whatsapp() {
+ wmctrl_name=`/usr/bin/wmctrl -l | cut -d " " -f 5-9999|grep "WhatsApp"`
+ /usr/bin/wmctrl -R "${wmctrl_name}"
+}
+
+
+if [[ `whatsapp_running` -eq 0 ]]; then
+ #start whatsapp
+ start_whatsapp
+else
+ #already running, bring app to front
+ focus_whatsapp
+fi
