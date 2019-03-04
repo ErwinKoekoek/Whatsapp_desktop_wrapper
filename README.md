@@ -23,4 +23,4 @@ $ sudo cp /opt/whatsapp/whatsapp.desktop /usr/share/applications/whatsapp.deskto
 $ sudo rm /opt/whatsapp/whatsapp.desktop 1>/dev/null 2>&1<br/>
 
 #### Create shortcut
-$ sudo ln -s /opt/whatsapp/whatsapp.desktop ~/.<br/>
+$ sudo ln -s /opt/whatsapp/whatsapp.desktop ~/whatsapp.desktop<br/>
