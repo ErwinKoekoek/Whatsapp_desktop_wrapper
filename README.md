@@ -19,8 +19,7 @@ $ sudo wget https://raw.githubusercontent.com/ErwinKoekoek/Whatsapp_desktop_wrap
 
 #### Rights
 $ sudo chmod +x /opt/whatsapp/start-whatsapp<br/>
-$ sudo cp /opt/whatsapp/whatsapp.desktop /usr/share/applications/whatsapp.desktop<br/>
-$ sudo rm /opt/whatsapp/whatsapp.desktop 1>/dev/null 2>&1<br/>
+$ sudo ln -s /opt/whatsapp/whatsapp.desktop /usr/share/applications/whatsapp.desktop<br/>
 
 #### Create shortcut
 $ sudo ln -s /opt/whatsapp/whatsapp.desktop ~/whatsapp.desktop<br/>
