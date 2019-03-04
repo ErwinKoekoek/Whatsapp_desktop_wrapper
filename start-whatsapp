@@ -16,11 +16,11 @@ function whatsapp_running() {
 
 function start_whatsapp() {
  #exec -a "${name}" /usr/bin/chromium-browser --app=https://web.whatsapp.com &
- /usr/bin/chromium-browser --app=${url} --class="WhatsApp" &
+ /usr/bin/chromium-browser --app=${url} --class="${name}" &
 }
 
 function focus_whatsapp() {
- wmctrl_name=`/usr/bin/wmctrl -l | cut -d " " -f 5-9999|grep "WhatsApp"`
+ wmctrl_name=`/usr/bin/wmctrl -l | cut -d " " -f 5-9999|grep "${name}"`
  /usr/bin/wmctrl -R "${wmctrl_name}"
 }
 
