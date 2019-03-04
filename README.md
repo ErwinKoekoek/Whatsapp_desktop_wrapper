@@ -3,8 +3,8 @@
 
 ## Tested on
 - Ubuntu 16.04/18.04
-- Debian Strech
-- Elementary OS
+- Debian Stretch
+- Elementary OS 0.4 Loki/5.0 Juno
 
 ## pre requirements
 $ sudo apt-get install wmctrl chromium-browser -y
