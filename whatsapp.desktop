@@ -1,3 +1,4 @@
+#!/usr/bin/env /opt/whatsapp/start-whatsapp
 [Desktop Entry]
 Encoding=UTF-8
 Version=1.0
@@ -8,4 +9,3 @@ Comment=WhatsApp
 Exec=/opt/whatsapp/start-whatsapp
 Icon=/opt/whatsapp/whatsapp.png
 StartupWMClass=WhatsApp
-
